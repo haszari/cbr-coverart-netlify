@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Timepiece';
+  src: local('Timepiece'), url(../fonts/Timepiece.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.ttf) format('truetype');
+}
+
+$title-grid-size: 60px;
+
+.App {
+  padding: 20px;
+}
+
+.background {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  background-size: cover;
+  background-color: rgb(255 83 10);
+}
+/* Foundation Slab Pixels */
+/* .background {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  background-image: url(./images/IMG_6648-mirror-pixels.c38f843b.png);
+  background-position-x: -251px;
+  background-size: 156%;
+  background-position-y: -266px;
+} */
+/*
+<MixerLogo colors={ {
+  top: '#fffff6',
+  middle: '#7e0101',
+  bottom: '#01010b',
+} } />
+*/
+
+/* sumiyoshi red purple option */
+/* .background {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  background-repeat: repeat;
+  background-image: url(./images/redlinemirror-20220304.jpg);
+  background-position-x: -492px;
+  background-size: 137%;
+  background-position-y: 0px;
+} */
+/* <MixerLogo colors={ {
+  top: '#8f9aa9',
+  middle: '#534785',
+  bottom: '#8e0e00',
+} } />  */
+
+.ep-title {
+  font-family: 'Timepiece';
+  text-transform: uppercase;
+  font-size: $title-grid-size;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.title-line {
+  display: flex;
+}
+
+.title-line .grid-letter {
+  width: $title-grid-size;
+  height: $title-grid-size;;
+  margin: 0;
+}
+
+.title-line .grid-letter .letter {
+  position: relative;
+  display: inline-block;
+  width: $title-grid-size;;
+  text-align: center;
+
+  // Adjust glyphs centred (depends on font size)
+  top: -5px;
+  // left: 1px;
+}
+
+.title-line .grid-letter.black-background {
+  background: #272727;
+  color: white;
+}
+.title-line .grid-letter.white-background {
+  background: white;
+  color: #272727;
+}
+.title-line .grid-letter.transparent-background {
+  background: transparent;
+  color:transparent;
+}
+
+.mixer-logo svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.catalogue-number {
+  font-family: 'NotoSans-Bold';
+  text-transform: uppercase;
+  position: absolute;
+  color: #272727;
+  font-size: 20px;
+  left: 14px;
+  bottom: 10px;
+}
+
+.elements {
+  position: relative;
+  top: 1500px;
+  background: gray;
+  height: 400px;
+  width: 1000px;
+  margin: 0;
+}
+
+/* release specific overrides */
+
+.background.coming-on {
+  background-image: url(../images/street-art-eye-coming-on.jpg);
+  background-position-x: -180px;
+  background-position-y: -6px;
+  background-size: 1385px;
+}
