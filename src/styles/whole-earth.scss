@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Hedvig Letters Serif';
+  src: local('Hedvig Letters Serif'), url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Hedvig Letters Sans';
+  src: local('Hedvig Letters Sans'), url(../fonts/HedvigLettersSans-Regular.ttf) format('truetype');
+}
+
+
+body {
+  background: rgb(0.2, 0.2, 0.2);
+}
+
+.artwork {
+  background-size: cover;
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.copy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 44px;
+  line-height: 85%;
+}
+
+.artist {
+  font-family: 'Hedvig Letters Serif', serif;
+  font-weight: 600;
+}
+.title {
+  font-family: 'Hedvig Letters Sans', serif;
+  font-style: italic;
+  font-size: 60%;
+}
+
+.galley-sinking .artwork {
+  background-image: url("../images/SinkingGalleySneer.jpeg");
+}
+.galley-sinking .copy {
+  width: 250px;
+  text-align: right;
+  color: #190000;
+  background: #949496;
+  bottom: 30px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  padding-top: 4px;
+}
+.galley-sinking .title {
+  position: relative;
+  left: -4px;
+}
+
+.mivova .artwork {
+  background-image: url("../images/mivovawave.jpeg");
+}
+.mivova .copy {
+  top: 285px;
+  color: #101010;
+  text-align: center;
+  width: 100%;
+  /* font-size: 90% */
+}
+.mivova .title {
+  /* font-size: 50%; */
+  padding-top: 10px;
+  text-transform: lowercase;
+}

@@ -1,9 +1,15 @@
 import CBR012 from './components/covers/cbr012-coming-on';
-import './styles/cartoon-network.scss';
+import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
+import Mivova from './components/covers/cbrxxx-mivova';
+import 'styles/app.scss';
 
 function App() {
   return (
-    <CBR012 />
+    <>
+      <SinkingGalley />
+      <Mivova />
+      <CBR012 />
+    </>
   );
 }
 
