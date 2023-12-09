@@ -8,6 +8,9 @@
   src: local('Hedvig Letters Sans'), url(../fonts/HedvigLettersSans-Regular.ttf) format('truetype');
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: rgb(0.2, 0.2, 0.2);
@@ -22,11 +25,11 @@ body {
 }
 
 .copy {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   font-size: 44px;
-  line-height: 85%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #101010;
 }
 
 .artist {
@@ -39,10 +42,19 @@ body {
   font-size: 60%;
 }
 
+.mixer-logo svg {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+// CUSTOM OVERRIDES FOR SINKING GALLEY
+// These should be hard-coded into component instead - single source.
 .galley-sinking .artwork {
   background-image: url("../images/SinkingGalleySneer.jpeg");
 }
 .galley-sinking .copy {
+  position: absolute;
+  line-height: 85%;
   width: 250px;
   text-align: right;
   color: #190000;
@@ -57,14 +69,16 @@ body {
   left: -4px;
 }
 
+// CUSTOM OVERRIDES FOR MIVOVA
+// These should be hard-coded into component instead - single source.
 .mivova .artwork {
   background-image: url("../images/mivovawave.jpeg");
 }
 .mivova .copy {
   top: 285px;
-  color: #101010;
   text-align: center;
   width: 100%;
+  color: #101010;
   /* font-size: 90% */
 }
 .mivova .title {

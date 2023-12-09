@@ -3,11 +3,11 @@ import 'styles/whole-earth.scss';
 
 export default function Cover() {
   return (
-    <div class="cover galley-sinking">
-      <div class="artwork">
-        <div class="copy">
-          <div class="artist">Haszari</div>
-          <div class="title">Sinking Galley</div>
+    <div className="cover galley-sinking">
+      <div className="artwork">
+        <div className="copy">
+          <div className="artist">Haszari</div>
+          <div className="title">Sinking Galley</div>
         </div>
       </div>
     </div>
