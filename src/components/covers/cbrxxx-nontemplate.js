@@ -6,9 +6,9 @@ import image from 'images/nontemplate-1.jpeg';
 export default function Cover() {
   const background = {
     backgroundImage: `url("${image}")`,
-    backgroundPositionY: "-210px",
+    backgroundPositionY: "-21%",
     backgroundPositionX: "center",
-    backgroundSize: "1120px",
+    backgroundSize: "112%",
   };
   const copy = {
     fontSize: "44px",
