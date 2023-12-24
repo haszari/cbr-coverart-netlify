@@ -1,5 +1,15 @@
 
 
+/**
+ * Renders a background image with customizable scale, position, and image source.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.image - Imported image (path).
+ * @param {number} [props.scale=100] - The scale of the background image as % of container.
+ * @param {number} [props.left=0] - The horizontal offset of the background image as % of container.
+ * @param {number} [props.top=0] - The vertical offset of the background image as % of container.
+ * @returns {JSX.Element} The rendered background image component.
+ */
 export default function BackgroundImage( {
   image,
   scale = 100,
