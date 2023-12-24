@@ -21,8 +21,8 @@ body {
 
 .cover {
   overflow: hidden;
-  width: 1500px;
-  height: 1500px;
+  width: 3000px;
+  height: 3000px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .copy {
-  font-size: 44px;
+  font-size: 66px;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -53,8 +53,8 @@ body {
 }
 
 .mixer-logo svg {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   position: absolute;
 }
 
@@ -66,18 +66,18 @@ body {
 .galley-sinking .copy {
   position: absolute;
   line-height: 85%;
-  width: 250px;
+  width: 375px;
   text-align: right;
   color: #190000;
   background: #949496;
-  bottom: 30px;
-  padding-right: 5px;
-  padding-bottom: 1px;
-  padding-top: 4px;
+  bottom: 45px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-top: 6px;
 }
 .galley-sinking .title {
   position: relative;
-  left: -4px;
+  left: -6px;
 }
 
 /*
@@ -93,7 +93,7 @@ body {
   color: #101010;
 }
 .mivova .title {
-  padding-top: 10px;
+  padding-top: 15px;
   text-transform: lowercase;
 }
 */
