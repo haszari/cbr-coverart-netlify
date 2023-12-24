@@ -16,14 +16,13 @@ export default function ComingOnLabel({ position, scale }) {
   }
   if (position.right === 0) {
     borderRadius[1] = "0px";
-    borderRadius[4] = "0px";
+    borderRadius[2] = "0px";
   }
 
   const copy = {
-    textAlign: "left",
+    textAlign: `${position.left !== undefined ? "right" : "left"}`,
     backgroundColor: "#efffff",
-    paddingLeft: "10px",
-    paddingBottom: "4px",
+    padding: "0px 10px 4px",
     position: "absolute",
     bottom: `${scale > 1 ? 11.11 * scale : 0}%`,
     borderRadius: borderRadius.join` `,
@@ -42,9 +41,11 @@ export default function ComingOnLabel({ position, scale }) {
   const mixer = {
     position: "absolute",
     scale: `${scale * 100}%`,
-    right: `${-8 + (position.right !== undefined ? 0 : -(scale - 1) * 400)}px`,
-    bottom: `${-8 - (scale - 1) * 10}px`,
-    // translate: "0% 50%",
+    left: `${
+      position.left !== undefined ? `${110 + 110 * (scale - 1)}px` : ""
+    }`,
+    right: `${position.right !== undefined ? `-8px` : ""}`,
+    top: `${112 + 112 * (scale - 1)}px`,
   };
   const wrap = {
     position: "absolute",

@@ -4,9 +4,9 @@ import image from "images/street-art-eye-coming-on.jpg";
 import ComingOnLabel from "components/labels/coming-on-label";
 
 export default function Cover() {
-  const scale = 1.5;
+  const scale = 1;
   const labelPosition = {
-    left: 0,
+    right: 0,
     bottom: 2,
   };
 
