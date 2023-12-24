@@ -8,7 +8,6 @@ export default function Cover() {
     backgroundImage: `url("${image}")`,
   };
 
-
   return (
     <div className="cover mivova">
       <div className="artwork"  style={ background }>
