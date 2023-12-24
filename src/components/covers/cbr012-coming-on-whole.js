@@ -1,7 +1,7 @@
 import "styles/whole-earth.scss";
 
 import image from "images/street-art-eye-coming-on.jpg";
-import ComingOnLabel from "components/labels/coming-on-label";
+import ArtistTitleLabel from "components/ArtistTitleLabel";
 
 export default function Cover() {
   const scale = 3;
@@ -22,7 +22,12 @@ export default function Cover() {
   return (
     <div className="cover">
       <div className="artwork" style={background}>
-        <ComingOnLabel position={labelPosition} scale={scale} />
+        <ArtistTitleLabel
+          artist="Haszari"
+          title="It Was Coming On"
+          position={labelPosition}
+          scale={scale}
+        />
       </div>
     </div>
   );

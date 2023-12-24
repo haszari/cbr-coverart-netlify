@@ -1,6 +1,11 @@
 import MixerLogo from "components/mixer-logo";
 
-export default function ComingOnLabel({ position, scale }) {
+export default function ArtistTitleLabel({
+  artist,
+  title,
+  position,
+  scale
+}) {
   const borderRadius = ["10px", "10px", "10px", "10px"];
   if (position.top === 0) {
     borderRadius[0] = "0px";
@@ -60,8 +65,8 @@ export default function ComingOnLabel({ position, scale }) {
   return (
     <div style={wrap}>
       <div className="copy" style={copy}>
-        <div className="artist">Haszari</div>
-        <div className="title">It Was Coming On</div>
+        <div className="artist">{artist}</div>
+        <div className="title">{title}</div>
       </div>
       <div style={mixer}>
         <MixerLogo
