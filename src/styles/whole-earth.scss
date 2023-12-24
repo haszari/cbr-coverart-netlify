@@ -19,12 +19,19 @@ body {
   background: rgb(0.2, 0.2, 0.2);
 }
 
-.artwork {
-  background-size: cover;
-  width: 1000px;
-  height: 1000px;
+.cover {
+  overflow: hidden;
+  width: 1500px;
+  height: 1500px;
   position: relative;
   margin-bottom: 10px;
+}
+
+.artwork {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .copy {
@@ -73,6 +80,7 @@ body {
   left: -4px;
 }
 
+/*
 // CUSTOM OVERRIDES FOR MIVOVA
 // These should be hard-coded into component instead - single source.
 .mivova .artwork {
@@ -83,10 +91,9 @@ body {
   text-align: center;
   width: 100%;
   color: #101010;
-  /* font-size: 90% */
 }
 .mivova .title {
-  /* font-size: 50%; */
   padding-top: 10px;
   text-transform: lowercase;
 }
+*/
