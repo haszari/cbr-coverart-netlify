@@ -18,8 +18,8 @@ body {
 
 .artwork {
   background-size: cover;
-  width: 1000px;
-  height: 1000px;
+  width: 1500px;
+  height: 1500px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -70,6 +70,7 @@ body {
   left: -4px;
 }
 
+/*
 // CUSTOM OVERRIDES FOR MIVOVA
 // These should be hard-coded into component instead - single source.
 .mivova .artwork {
@@ -80,10 +81,9 @@ body {
   text-align: center;
   width: 100%;
   color: #101010;
-  /* font-size: 90% */
 }
 .mivova .title {
-  /* font-size: 50%; */
   padding-top: 10px;
   text-transform: lowercase;
 }
+*/
