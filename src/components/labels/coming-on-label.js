@@ -24,16 +24,16 @@ export default function ComingOnLabel({ position, scale }) {
     backgroundColor: "#efffff",
     padding: "0px 10px 4px",
     position: "absolute",
-    bottom: `${scale > 1 ? 11.11 * scale : 0}%`,
+    bottom: `${(scale - 1) * 66.67}px`,
     borderRadius: borderRadius.join` `,
     right: `${
       scale > 1 && position.right !== undefined
-        ? (scale - 1) * 200
+        ? (scale - 1) * 300
         : position.right
     }px`,
     left: `${
       scale > 1 && position.left !== undefined
-        ? (scale - 1) * 200
+        ? (scale - 1) * 300
         : position.left
     }px`,
     scale: `${scale * 100}%`,
@@ -45,7 +45,7 @@ export default function ComingOnLabel({ position, scale }) {
       position.left !== undefined ? `${110 + 110 * (scale - 1)}px` : ""
     }`,
     right: `${position.right !== undefined ? `-8px` : ""}`,
-    top: `${112 + 112 * (scale - 1)}px`,
+    top: `${120 + 105 * (scale - 1)}px`,
   };
   const wrap = {
     position: "absolute",
@@ -53,7 +53,7 @@ export default function ComingOnLabel({ position, scale }) {
     bottom: `${position.bottom}%`,
     left: `${position.left}%`,
     right: `${position.right}%`,
-    width: `400px`,
+    width: `600px`,
     height: `${102 * scale}px`,
   };
 

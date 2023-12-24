@@ -1,16 +1,12 @@
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 
-import CBR012 from './components/covers/cbr012-coming-on';
-import CBR012WholeEarth from './components/covers/cbr012-coming-on-whole';
-import Nontemplate from './components/covers/cbrxxx-nontemplate';
-import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
-import Mivova from './components/covers/cbrxxx-mivova';
-import PhoticReflex from './components/covers/cbrxxx-photicreflex';
-import 'styles/app.scss';
-
-
-
-
+import CBR012 from "./components/covers/cbr012-coming-on";
+import CBR012WholeEarth from "./components/covers/cbr012-coming-on-whole";
+import Nontemplate from "./components/covers/cbrxxx-nontemplate";
+import SinkingGalley from "./components/covers/cbrxxx-sinkinggalley";
+import Mivova from "./components/covers/cbrxxx-mivova";
+import PhoticReflex from "./components/covers/cbrxxx-photicreflex";
+import "styles/app.scss";
 
 function Home() {
   return (
@@ -27,8 +23,10 @@ function Home() {
       <Link to="/nontemplate">
         <Nontemplate />
       </Link>
+      <Link to="/comingon">
+        <CBR012WholeEarth />
+      </Link>
 
-      <CBR012WholeEarth />
       <SinkingGalley />
       <Mivova />
       <CBR012 />
@@ -40,12 +38,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" >
+        <Route path="/">
           <Route index element={<Home />} />
           <Route path="photicreflex" element={<PhoticReflex />} />
           <Route path="mivova" element={<Mivova />} />
           <Route path="nontemplate" element={<Nontemplate />} />
           <Route path="sinkinggalley" element={<SinkingGalley />} />
+          <Route path="comingon" element={<CBR012WholeEarth />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
