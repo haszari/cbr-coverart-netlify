@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "shot": "node ./src/scripts/to-image.mjs"
+    "render": "node ./src/scripts/render.mjs"
   },
   "eslintConfig": {
     "extends": [
