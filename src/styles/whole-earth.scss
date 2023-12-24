@@ -1,11 +1,14 @@
 @font-face {
-  font-family: 'Hedvig Letters Serif';
-  src: local('Hedvig Letters Serif'), url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf) format('truetype');
+  font-family: "Hedvig Letters Serif";
+  src: local("Hedvig Letters Serif"),
+    url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf)
+      format("truetype");
 }
 
 @font-face {
-  font-family: 'Hedvig Letters Sans';
-  src: local('Hedvig Letters Sans'), url(../fonts/HedvigLettersSans-Regular.ttf) format('truetype');
+  font-family: "Hedvig Letters Sans";
+  src: local("Hedvig Letters Sans"),
+    url(../fonts/HedvigLettersSans-Regular.ttf) format("truetype");
 }
 
 * {
@@ -33,11 +36,11 @@ body {
 }
 
 .artist {
-  font-family: 'Hedvig Letters Serif', serif;
+  font-family: "Hedvig Letters Serif", serif;
   font-weight: 600;
 }
 .title {
-  font-family: 'Hedvig Letters Sans', serif;
+  font-family: "Hedvig Letters Sans", serif;
   font-style: italic;
   font-size: 60%;
 }
