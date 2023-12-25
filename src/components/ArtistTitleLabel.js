@@ -4,7 +4,7 @@ export default function ArtistTitleLabel({
   artist = '',
   title = '',
   // Default sizing for 3000px square image.
-  fontSize = '140px',
+  textSize = '140px',
   padding = '50px',
   radius = '50px',
   gap = '50px',
@@ -59,14 +59,14 @@ export default function ArtistTitleLabel({
   const defaultTextAlign = centered ? 'center' : ( leftAlign ? 'right' : 'left' );
   const copy = {
     textAlign: textAlign || defaultTextAlign,
-    fontSize: fontSize,
+    fontSize: textSize,
     width: '100%',
   };
   const mixer = {
     // Pure fudge to nudge the mixer down as it renders with bottom padding.
     // (I think the SVG needs to be centered exactly in bounding box.)
     position: 'relative',
-    top: `calc(${fontSize} * 0.05)`,
+    top: `calc(${textSize} * 0.05)`,
   };
   if ( !mixerSize || mixerSize < 1 ) {
     mixer.display = 'none';
