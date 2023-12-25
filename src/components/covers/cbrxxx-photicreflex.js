@@ -1,6 +1,5 @@
 
 import BackgroundImage from 'components/v2-whole-earth/BackgroundImage';
-
 import ArtistTitleLabel from 'components/ArtistTitleLabel';
 
 import 'styles/whole-earth.scss';
@@ -13,9 +12,9 @@ export default function Cover() {
     <div className='cover photicreflex'>
       <BackgroundImage
         image={ image }
-        scale={ 200 }
-        left={ -50 }
-        top={ -50 }
+        scale={ 160 }
+        left='-1500px'
+        top='-750px'
       />
       <ArtistTitleLabel
         fontSize='110px'
