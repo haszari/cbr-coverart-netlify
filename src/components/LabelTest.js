@@ -27,6 +27,20 @@ function randomTitle({words = 2}) {
 export default function LabelTest() {
   const testCount = 10;
   const covers = [];
+  covers.push( {
+    artist: randomTitle(Math.random() * 2 + 1),
+    title: randomTitle(Math.random() * 6 + 1),
+    length: 100,
+  });
+  covers.push( {
+    artist: randomTitle(Math.random() * 2 + 1),
+    title: randomTitle(Math.random() * 6 + 1),
+    length: 55,
+    position: {
+      left: 0,
+    },
+    textAlign: 'left',
+  });
   for (let i = 0; i < testCount; i++) {
     const position = {
       top: Math.random() * 100,
@@ -45,7 +59,6 @@ export default function LabelTest() {
       position
     });
   }
-  // initialise an array with 10 elements
 
   // return (<p>BING</p>);
   return covers.map((item, i) => (

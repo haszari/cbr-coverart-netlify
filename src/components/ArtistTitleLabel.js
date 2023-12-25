@@ -6,62 +6,55 @@ export default function ArtistTitleLabel({
   fontSize = '2em',
   mixerSize = '4em',
   padding = '1em',
+  radius = '1em',
+  gap = '1em',
   // Specify 2x of left, right, top, bottom as percent of container.
   position = { bottom: 25, left: 0 },
   // Width of label as % of container.
   length = 50,
-  scale = 1,
+  textAlign = '',
+  colours = {
+    text: 'black',
+    background: 'white',
+    mixer: {
+      top: '#555',
+      middle: '#999',
+      bottom: '#ccc',
+    }
+  },
 }) {
   const leftAlign = position.left !== undefined;
+  const centered = (length === 100);
 
-  const borderRadius = ['10px', '10px', '10px', '10px'];
-  if (position.top === 0) {
-    borderRadius[0] = '0px';
-    borderRadius[1] = '0px';
+  const borderRadius = [0, 0, 0, 0];
+  if (! centered) {
+    if (leftAlign) {
+      borderRadius[1] = radius;
+      borderRadius[2] = radius;
+    }
+    else {
+      borderRadius[0] = radius;
+      borderRadius[3] = radius;
+    }
   }
-  if (position.bottom === 0) {
-    borderRadius[2] = '0px';
-    borderRadius[3] = '0px';
-  }
-  if (position.left === 0) {
-    borderRadius[0] = '0px';
-    borderRadius[3] = '0px';
-  }
-  if (position.right === 0) {
-    borderRadius[1] = '0px';
-    borderRadius[2] = '0px';
-  }
-
 
   const wrap = {
     display: 'flex',
     flexDirection: leftAlign ? 'row' : 'row-reverse',
     alignItems: 'center',
+    gap: gap,
     padding: padding,
     ...position,
     position: 'absolute',
     width: `${length}%`,
-    backgroundColor: 'white',
+    backgroundColor: colours.background,
+    color: colours.text,
     borderRadius: borderRadius.join` `,
   };
-
+  const defaultTextAlign = centered ? 'center' : ( leftAlign ? 'right' : 'left' );
   const copy = {
-    textAlign: `${position.left !== undefined ? 'right' : 'left'}`,
+    textAlign: textAlign || defaultTextAlign,
     fontSize: fontSize,
-    // padding: '0px 10px 4px',
-    // position: 'absolute',
-    // bottom: `${(scale - 1) * 66.67}px`,
-    // right: `${
-    //   scale > 1 && position.right !== undefined
-    //     ? (scale - 1) * 300
-    //     : position.right
-    // }px`,
-    // left: `${
-    //   scale > 1 && position.left !== undefined
-    //     ? (scale - 1) * 300
-    //     : position.left
-    // }px`,
-    // scale: `${scale * 100}%`,
   };
   const mixer = {
     // display: 'none',
@@ -80,9 +73,9 @@ export default function ArtistTitleLabel({
         <MixerLogo
           size={mixerSize}
           colors={{
-            top: '#92f8ff',
-            middle: '#aaf5b4',
-            bottom: '#db02a9',
+            top: colours.mixer.top,
+            middle: colours.mixer.middle,
+            bottom: colours.mixer.bottom,
           }}
         />
       </div>
