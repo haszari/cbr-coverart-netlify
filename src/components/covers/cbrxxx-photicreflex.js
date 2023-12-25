@@ -22,7 +22,7 @@ export default function Cover() {
         title='photic reflex'
         position={{
           right: 0,
-          bottom: '15%',
+          bottom: '8%',
         }}
         colours={{
           text: '#040800',
