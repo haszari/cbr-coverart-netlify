@@ -20,8 +20,8 @@ export default function BackgroundImage( {
     backgroundImage: `url("${image}")`,
     height: `${scale}%`,
     width: `${scale}%`,
-    left: `${left}%`,
-    top: `${top}%`,
+    backgroundPositionX: left,
+    backgroundPositionY: top,
   };
   return (
     <div className="artwork" style={ background } />

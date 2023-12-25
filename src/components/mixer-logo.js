@@ -4,7 +4,7 @@ function MixerLogo( { size, colors } ) {
   const { top, middle, bottom } = colors;
   return (
     <div className="mixer-logo">
-      <svg version="1.1" x="0" y="0" width="500" height="500" viewBox="0, 0, 500, 500">
+      <svg version="1.1" x="0" y="0" width={size} height={size} viewBox="0, 0, 500, 500">
         <defs>
           <clipPath id="Clip_1">
             <path d="M329.635,281.805 L385.181,281.805 L385.181,462.034 L329.635,462.034 z M354.256,292.805 L340.635,449.3 L360.56,451.034 L374.181,294.539 L354.256,292.805 z"/>

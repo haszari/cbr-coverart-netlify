@@ -1,5 +1,6 @@
 
 import BackgroundImage from 'components/v2-whole-earth/BackgroundImage';
+import ArtistTitleLabel from 'components/ArtistTitleLabel';
 
 import 'styles/whole-earth.scss';
 
@@ -7,14 +8,22 @@ import image from 'images/mivovawave.jpeg';
 
 export default function Cover() {
   return (
-    <div className="cover mivova">
+    <div className='cover mivova'>
       <BackgroundImage
         image={ image }
       />
-      <div className="copy">
-        <div className="artist">Haszari</div>
-        <div className="title">Mivova</div>
-      </div>
+      <ArtistTitleLabel
+        artist='Haszari'
+        title='mivova'
+        length={ 100 }
+        position={{
+          top: '25%',
+        }}
+        mixerSize={0}
+        colours={{
+          background: 'transparent'
+        }}
+      />
     </div>
   );
 }

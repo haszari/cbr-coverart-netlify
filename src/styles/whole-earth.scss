@@ -1,11 +1,14 @@
 @font-face {
-  font-family: 'Hedvig Letters Serif';
-  src: local('Hedvig Letters Serif'), url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf) format('truetype');
+  font-family: "Hedvig Letters Serif";
+  src: local("Hedvig Letters Serif"),
+    url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf)
+      format("truetype");
 }
 
 @font-face {
-  font-family: 'Hedvig Letters Sans';
-  src: local('Hedvig Letters Sans'), url(../fonts/HedvigLettersSans-Regular.ttf) format('truetype');
+  font-family: "Hedvig Letters Sans";
+  src: local("Hedvig Letters Sans"),
+    url(../fonts/HedvigLettersSans-Regular.ttf) format("truetype");
 }
 
 * {
@@ -22,6 +25,7 @@ body {
   height: 3000px;
   position: relative;
   margin-bottom: 10px;
+  background:grey;
 }
 
 .artwork {
@@ -31,28 +35,15 @@ body {
   height: 100%;
 }
 
-.copy {
-  font-size: 66px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  color: #101010;
-}
 
 .artist {
-  font-family: 'Hedvig Letters Serif', serif;
+  font-family: "Hedvig Letters Serif", serif;
   font-weight: 600;
 }
 .title {
-  font-family: 'Hedvig Letters Sans', serif;
+  font-family: "Hedvig Letters Sans", serif;
   font-style: italic;
   font-size: 60%;
-}
-
-.mixer-logo svg {
-  width: 120px;
-  height: 120px;
-  position: absolute;
 }
 
 // CUSTOM OVERRIDES FOR SINKING GALLEY
