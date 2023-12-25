@@ -37,8 +37,8 @@ body {
 
 .copy {
   // font-size: 66px;
-  position: absolute;
-  text-align: center;
+  // position: absolute;
+  // text-align: center;
   width: 100%;
   color: #101010;
 }
@@ -53,11 +53,11 @@ body {
   font-size: 60%;
 }
 
-.mixer-logo svg {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-}
+// .mixer-logo svg {
+//   width: 120px;
+//   height: 120px;
+//   position: absolute;
+// }
 
 // CUSTOM OVERRIDES FOR SINKING GALLEY
 // These should be hard-coded into component instead - single source.
