@@ -20,6 +20,18 @@ export default function Cover() {
       <ArtistTitleLabel
         artist='Haszari'
         title='photic reflex'
+        position={{
+          right: 0,
+          bottom: '15%',
+        }}
+        colours={{
+          text: '#040800',
+          mixer: {
+            top: 'rgb(167 199 223)',
+            middle: 'rgb(246 235 214);',
+            bottom: 'rgb(68 70 32)',
+          }
+        }}
       />
     </div>
   );

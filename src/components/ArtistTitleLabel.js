@@ -4,6 +4,7 @@ export default function ArtistTitleLabel({
   artist = '',
   title = '',
   fontSize = '2em',
+  // Pass zero or negative to hide mixer.
   mixerSize = '4em',
   padding = '1em',
   radius = '1em',
@@ -13,6 +14,11 @@ export default function ArtistTitleLabel({
   // Width of label as % of container.
   length = 50,
   textAlign = '',
+  colours
+}) {
+  const leftAlign = position.left !== undefined;
+  const centered = (length === 100);
+
   colours = {
     text: 'black',
     background: 'white',
@@ -20,11 +26,9 @@ export default function ArtistTitleLabel({
       top: '#555',
       middle: '#999',
       bottom: '#ccc',
-    }
-  },
-}) {
-  const leftAlign = position.left !== undefined;
-  const centered = (length === 100);
+    },
+    ...colours,
+  };
 
   const borderRadius = [0, 0, 0, 0];
   if (! centered) {
@@ -55,17 +59,17 @@ export default function ArtistTitleLabel({
   const copy = {
     textAlign: textAlign || defaultTextAlign,
     fontSize: fontSize,
+    width: '100%',
   };
   const mixer = {
-    // display: 'none',
-    // position: 'absolute',
-    // // scale: `${scale * 100}%`,
-    // left: `${
-    //   position.left !== undefined ? `${110 + 110 * (scale - 1)}px` : ''
-    // }`,
-    // right: `${position.right !== undefined ? `-8px` : ''}`,
-    // top: `${120 + 105 * (scale - 1)}px`,
+    // Pure fudge to nudge the mixer down as it renders with bottom padding.
+    // (I think the SVG needs to be centered exactly in bounding box.)
+    position: 'relative',
+    top: `calc(${fontSize} * 0.05)`,
   };
+  if ( !mixerSize || mixerSize < 1 ) {
+    mixer.display = 'none';
+  }
 
   return (
     <div style={wrap}>
