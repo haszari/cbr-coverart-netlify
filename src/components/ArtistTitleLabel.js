@@ -1,10 +1,14 @@
 import MixerLogo from "components/mixer-logo";
 
 export default function ArtistTitleLabel({
-  artist,
-  title,
-  position,
-  scale
+  artist = '',
+  title = '',
+  fontSize = '2em',
+  // Specify 2x of left, right, top, bottom as percent of container.
+  position = { bottom: 25, left: 0 },
+  // Width of label as % of container.
+  length = 50,
+  scale = 1,
 }) {
   const borderRadius = ["10px", "10px", "10px", "10px"];
   if (position.top === 0) {
@@ -24,8 +28,16 @@ export default function ArtistTitleLabel({
     borderRadius[2] = "0px";
   }
 
+  const wrap = {
+    ...position,
+    position: "absolute",
+    width: `${length}%`,
+    height: `${102 * scale}px`,
+  };
+
   const copy = {
     textAlign: `${position.left !== undefined ? "right" : "left"}`,
+    fontSize: fontSize,
     backgroundColor: "#efffff",
     padding: "0px 10px 4px",
     position: "absolute",
@@ -44,6 +56,7 @@ export default function ArtistTitleLabel({
     scale: `${scale * 100}%`,
   };
   const mixer = {
+    display: 'none',
     position: "absolute",
     scale: `${scale * 100}%`,
     left: `${
@@ -51,15 +64,6 @@ export default function ArtistTitleLabel({
     }`,
     right: `${position.right !== undefined ? `-8px` : ""}`,
     top: `${120 + 105 * (scale - 1)}px`,
-  };
-  const wrap = {
-    position: "absolute",
-    top: `${position.top}%`,
-    bottom: `${position.bottom}%`,
-    left: `${position.left}%`,
-    right: `${position.right}%`,
-    width: `600px`,
-    height: `${102 * scale}px`,
   };
 
   return (

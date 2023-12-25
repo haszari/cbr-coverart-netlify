@@ -6,6 +6,8 @@ import Nontemplate from "./components/covers/cbrxxx-nontemplate";
 import SinkingGalley from "./components/covers/cbrxxx-sinkinggalley";
 import Mivova from "./components/covers/cbrxxx-mivova";
 import PhoticReflex from "./components/covers/cbrxxx-photicreflex";
+import LabelTest from "./components/LabelTest";
+
 import "styles/app.scss";
 
 function Home() {
@@ -40,6 +42,7 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
+          <Route path="test" element={<LabelTest />} />
           <Route path="photicreflex" element={<PhoticReflex />} />
           <Route path="mivova" element={<Mivova />} />
           <Route path="nontemplate" element={<Nontemplate />} />
