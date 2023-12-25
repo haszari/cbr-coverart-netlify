@@ -6,6 +6,7 @@ import Nontemplate from './components/covers/cbrxxx-nontemplate';
 import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
 import Mivova from './components/covers/cbrxxx-mivova';
 import PhoticReflex from './components/covers/cbrxxx-photicreflex';
+import MomCircles from './components/covers/cbrxxx-momcircles';
 import LabelTest from './components/LabelTest';
 
 import 'styles/app.scss';
@@ -13,6 +14,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/momcircles'>
+        <MomCircles />
+      </Link>
       <Link to='/photicreflex'>
         <PhoticReflex />
       </Link>
@@ -44,6 +48,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='test' element={<LabelTest />} />
           <Route path='photicreflex' element={<PhoticReflex />} />
+          <Route path='momcircles' element={<MomCircles />} />
           <Route path='mivova' element={<Mivova />} />
           <Route path='nontemplate' element={<Nontemplate />} />
           <Route path='sinkinggalley' element={<SinkingGalley />} />
