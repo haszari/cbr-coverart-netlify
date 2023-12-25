@@ -18,6 +18,11 @@ export default function Cover() {
         top={ -50 }
       />
       <ArtistTitleLabel
+        fontSize='110px'
+        mixerSize='200px'
+        radius='50px'
+        padding='50px'
+        length={40}
         artist='Haszari'
         title='photic reflex'
         position={{

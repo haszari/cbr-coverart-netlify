@@ -3,12 +3,13 @@ import MixerLogo from 'components/mixer-logo';
 export default function ArtistTitleLabel({
   artist = '',
   title = '',
-  fontSize = '2em',
+  // Default sizing for 3000px square image.
+  fontSize = '140px',
+  padding = '50px',
+  radius = '50px',
+  gap = '50px',
   // Pass zero or negative to hide mixer.
-  mixerSize = '4em',
-  padding = '1em',
-  radius = '1em',
-  gap = '1em',
+  mixerSize = '200px',
   // Specify 2x of left, right, top, bottom as percent of container.
   position = { bottom: 25, left: 0 },
   // Width of label as % of container.

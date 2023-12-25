@@ -60,14 +60,13 @@ export default function LabelTest() {
     });
   }
 
-  // return (<p>BING</p>);
-  return covers.map((item, i) => (
+  return (<div className='label-test'>{covers.map((item, i) => (
     <div key={i} className="cover">
       <div className="artwork">
         <ArtistTitleLabel
           {...item}
-        />
+          />
       </div>
     </div>
-  ))
+  ))}</div>);
 };
