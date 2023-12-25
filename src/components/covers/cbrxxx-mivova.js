@@ -8,7 +8,7 @@ import image from 'images/mivovawave.jpeg';
 
 export default function Cover() {
   return (
-    <div className="cover mivova">
+    <div className='cover mivova'>
       <BackgroundImage
         image={ image }
       />

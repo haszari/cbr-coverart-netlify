@@ -1,7 +1,7 @@
-import "styles/whole-earth.scss";
+import 'styles/whole-earth.scss';
 
-import image from "images/street-art-eye-coming-on.jpg";
-import ArtistTitleLabel from "components/ArtistTitleLabel";
+import image from 'images/street-art-eye-coming-on.jpg';
+import ArtistTitleLabel from 'components/ArtistTitleLabel';
 
 export default function Cover() {
   const scale = 3;
@@ -11,7 +11,7 @@ export default function Cover() {
   };
 
   const background = {
-    backgroundImage: `url("${image}")`,
+    backgroundImage: `url('${image}')`,
     backgroundPositionX: `${-180 * scale}px`,
     backgroundPositionY: `${-6 * scale}px`,
     backgroundSize: `${1385 * scale}px`,
@@ -20,11 +20,11 @@ export default function Cover() {
   };
 
   return (
-    <div className="cover">
-      <div className="artwork" style={background}>
+    <div className='cover'>
+      <div className='artwork' style={background}>
         <ArtistTitleLabel
-          artist="Haszari"
-          title="It Was Coming On"
+          artist='Haszari'
+          title='It Was Coming On'
           position={labelPosition}
           scale={scale}
         />

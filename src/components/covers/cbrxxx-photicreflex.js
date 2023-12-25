@@ -10,7 +10,7 @@ import image from 'images/sunbeach.jpeg';
 
 export default function Cover() {
   return (
-    <div className="cover photicreflex">
+    <div className='cover photicreflex'>
       <BackgroundImage
         image={ image }
         scale={ 200 }
