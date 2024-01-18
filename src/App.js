@@ -7,6 +7,8 @@ import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
 import Mivova from './components/covers/cbrxxx-mivova';
 import PhoticReflex from './components/covers/cbrxxx-photicreflex';
 import MomCircles from './components/covers/cbrxxx-momcircles';
+import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
+
 import LabelTest from './components/LabelTest';
 
 import 'styles/app.scss';
@@ -14,6 +16,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/foundationslab'>
+        <FoundationSlab />
+      </Link>
       <Link to='/momcircles'>
         <MomCircles />
       </Link>
@@ -47,6 +52,7 @@ function App() {
         <Route path='/'>
           <Route index element={<Home />} />
           <Route path='test' element={<LabelTest />} />
+          <Route path='foundationslab' element={<FoundationSlab />} />
           <Route path='photicreflex' element={<PhoticReflex />} />
           <Route path='momcircles' element={<MomCircles />} />
           <Route path='mivova' element={<Mivova />} />

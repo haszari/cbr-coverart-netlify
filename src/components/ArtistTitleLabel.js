@@ -5,7 +5,7 @@ export default function ArtistTitleLabel({
   title = '',
   // Default sizing for 3000px square image.
   textSize = '140px',
-  padding = '50px',
+  padding = '50px 80px',
   radius = '50px',
   gap = '50px',
   // Pass zero or negative to hide mixer.
