@@ -27,18 +27,12 @@ export default function Cover() {
         colours={{
           text: '#250000',
           mixer: {
-            top: '#b25011',
-            middle: '#250000',
-            bottom: '#3e3d0d',
+            top: '#580203',
+            middle: '#7e6d4b',
+            bottom: '#7d8205',
           }
         }}
       />
     </div>
   );
 }
-
-/*
-            top: '#aacefe',
-            middle: '#250000',
-            bottom: '#ffcb53',
-*/
