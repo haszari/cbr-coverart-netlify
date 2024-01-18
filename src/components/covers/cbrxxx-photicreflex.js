@@ -4,7 +4,7 @@ import ArtistTitleLabel from 'components/ArtistTitleLabel';
 
 import 'styles/whole-earth.scss';
 
-import image from 'images/sunbeach.jpeg';
+import image from 'images/venicepoles.jpg';
 
 
 export default function Cover() {
@@ -17,11 +17,7 @@ export default function Cover() {
         top='-750px'
       />
       <ArtistTitleLabel
-        fontSize='110px'
-        mixerSize='200px'
-        radius='50px'
-        padding='50px'
-        length={40}
+        length={45}
         artist='Haszari'
         title='photic reflex'
         position={{
@@ -29,14 +25,20 @@ export default function Cover() {
           bottom: '8%',
         }}
         colours={{
-          text: '#040800',
+          text: '#250000',
           mixer: {
-            top: 'rgb(167 199 223)',
-            middle: 'rgb(246 235 214);',
-            bottom: 'rgb(68 70 32)',
+            top: '#b25011',
+            middle: '#250000',
+            bottom: '#3e3d0d',
           }
         }}
       />
     </div>
   );
 }
+
+/*
+            top: '#aacefe',
+            middle: '#250000',
+            bottom: '#ffcb53',
+*/
