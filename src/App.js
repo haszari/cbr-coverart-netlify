@@ -8,6 +8,7 @@ import Mivova from './components/covers/cbrxxx-mivova';
 import PhoticReflex from './components/covers/cbrxxx-photicreflex';
 import MomCircles from './components/covers/cbrxxx-momcircles';
 import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
+import RedlineTrain from './components/covers/cbr010-redline-train';
 
 import LabelTest from './components/LabelTest';
 
@@ -16,6 +17,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/redlinetrain'>
+        <RedlineTrain />
+      </Link>
       <Link to='/foundationslab'>
         <FoundationSlab />
       </Link>
@@ -52,6 +56,7 @@ function App() {
         <Route path='/'>
           <Route index element={<Home />} />
           <Route path='test' element={<LabelTest />} />
+          <Route path='redlinetrain' element={<RedlineTrain />} />
           <Route path='foundationslab' element={<FoundationSlab />} />
           <Route path='photicreflex' element={<PhoticReflex />} />
           <Route path='momcircles' element={<MomCircles />} />
