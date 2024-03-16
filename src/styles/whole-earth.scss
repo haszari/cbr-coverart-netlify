@@ -43,45 +43,10 @@ body {
 .title {
   font-family: "Hedvig Letters Sans", serif;
   font-style: italic;
-  font-size: 60%;
+  // font-size: 60%;
 }
 
 // CUSTOM OVERRIDES FOR SINKING GALLEY
-// These should be hard-coded into component instead - single source.
-.galley-sinking .artwork {
-  background-image: url("../images/SinkingGalleySneer.jpeg");
+.sinking-galley .mixer-logo {
+  opacity: 0.87;
 }
-.galley-sinking .copy {
-  position: absolute;
-  line-height: 85%;
-  width: 375px;
-  text-align: right;
-  color: #190000;
-  background: #949496;
-  bottom: 45px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-  padding-top: 6px;
-}
-.galley-sinking .title {
-  position: relative;
-  left: -6px;
-}
-
-/*
-// CUSTOM OVERRIDES FOR MIVOVA
-// These should be hard-coded into component instead - single source.
-.mivova .artwork {
-  background-image: url("../images/mivovawave.jpeg");
-}
-.mivova .copy {
-  top: 285px;
-  text-align: center;
-  width: 100%;
-  color: #101010;
-}
-.mivova .title {
-  padding-top: 15px;
-  text-transform: lowercase;
-}
-*/

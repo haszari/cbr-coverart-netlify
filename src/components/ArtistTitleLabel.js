@@ -4,7 +4,8 @@ export default function ArtistTitleLabel({
   artist = '',
   title = '',
   // Default sizing for 3000px square image.
-  textSize = '140px',
+  textSize = '140px', // Artist text size.
+  titleTextSize = '60%', // Title text size, relative to textSize.
   padding = '50px 80px',
   radius = '50px',
   gap = '50px',
@@ -71,6 +72,9 @@ export default function ArtistTitleLabel({
   if ( !mixerSize || mixerSize < 1 ) {
     mixer.display = 'none';
   }
+  const titleStyle = {
+    fontSize: titleTextSize,
+  };
 
   return (
     <div style={wrap}>
@@ -86,7 +90,7 @@ export default function ArtistTitleLabel({
       </div>
       <div className='copy' style={copy}>
         <div className='artist'>{artist}</div>
-        <div className='title'>{title}</div>
+        <div className='title gritle' style={titleStyle}>{title}</div>
       </div>
     </div>
   );
