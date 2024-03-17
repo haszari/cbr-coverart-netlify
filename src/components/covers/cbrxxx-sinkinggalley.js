@@ -6,11 +6,46 @@ import 'styles/whole-earth.scss';
 import image from 'images/SinkingGalleySneer.jpeg';
 
 export default function Cover() {
+  const overlay = {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: '100%',
+    height: '100%',
+    background: 'radial-gradient(circle at center, transparent 0, transparent 40%, #978879 95%)',
+  };
+
+  const overlayDark = {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: '100%',
+    height: '100%',
+    background: 'radial-gradient(circle at center, transparent 0, transparent 50%,  black 80%)',
+    opacity: 0.25,
+  };
+
+  const blackCorners = {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: '100%',
+    height: '100%',
+    background: 'radial-gradient(circle, transparent 0px, transparent 70%, rgb(24, 0, 0) 90%)',
+    opacity: 0.23,
+  };
+
   return (
     <div className='cover sinking-galley'>
       <BackgroundImage
         image={ image }
+        scale={ 110 }
+        left='-730px'
+        top='-300px'
       />
+      <div style={overlay}/>
+      <div style={overlayDark}/>
+      <div style={blackCorners}/>
       <ArtistTitleLabel
         artist='Haszari + Kathia Rudametkin'
         title='Sinking Galley'
