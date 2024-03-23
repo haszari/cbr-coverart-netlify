@@ -52,7 +52,7 @@ export default function Cover() {
         padding='40px 50px'
         textSize='86px'
         titleTextSize='70%'
-        length={ 60 }
+        length={ 55 }
         position={{
           bottom: '2%',
           left: 0,
