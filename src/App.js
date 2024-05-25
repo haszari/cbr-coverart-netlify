@@ -10,6 +10,7 @@ import MomCircles from './components/covers/cbrxxx-momcircles';
 import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
 import RedlineTrain from './components/covers/cbr010-redline-train';
 import Parkplatz from './components/covers/cbrxxx-parkplatz';
+import Gumdrop from './components/covers/cbrxxx-gumdrop';
 
 import LabelTest from './components/LabelTest';
 
@@ -18,6 +19,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/gumdrop'>
+        <Gumdrop />
+      </Link>
       <Link to='/parkplatz'>
         <Parkplatz />
       </Link>
@@ -59,6 +63,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='gumdrop' element={<Gumdrop />} />
           <Route path='parkplatz' element={<Parkplatz />} />
           <Route path='test' element={<LabelTest />} />
           <Route path='redlinetrain' element={<RedlineTrain />} />

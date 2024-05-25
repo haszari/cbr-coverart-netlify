@@ -16,7 +16,8 @@ export default function ArtistTitleLabel({
   // Width of label as % of container.
   length = 50,
   textAlign = '',
-  colours
+  colours,
+  forceRadius = false
 }) {
   const leftAlign = position.left !== undefined;
   const centered = (length === 100);
@@ -33,7 +34,13 @@ export default function ArtistTitleLabel({
   };
 
   const borderRadius = [0, 0, 0, 0];
-  if (! centered) {
+  if (forceRadius) {
+    borderRadius[1] = radius;
+    borderRadius[2] = radius;
+    borderRadius[0] = radius;
+    borderRadius[3] = radius;
+  }
+  else if (! centered) {
     if (leftAlign) {
       borderRadius[1] = radius;
       borderRadius[2] = radius;
