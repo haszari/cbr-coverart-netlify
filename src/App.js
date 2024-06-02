@@ -4,6 +4,7 @@ import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import CBR012WholeEarth from './components/covers/cbr012-coming-on-whole';
 import Nontemplate from './components/covers/cbrxxx-nontemplate';
 import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
+import GalleyListing from './components/covers/cbrxxx-galleylisting';
 import Mivova from './components/covers/cbrxxx-mivova';
 import PhoticReflex from './components/covers/cbrxxx-photicreflex';
 import MomCircles from './components/covers/cbrxxx-momcircles';
@@ -19,6 +20,12 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/galleylisting'>
+        <GalleyListing />
+      </Link>
+      <Link to='/sinkinggalley'>
+        <SinkingGalley />
+      </Link>
       <Link to='/gumdrop'>
         <Gumdrop />
       </Link>
@@ -40,9 +47,6 @@ function Home() {
       <Link to='/mivova'>
         <Mivova />
       </Link>
-      <Link to='/sinkinggalley'>
-        <SinkingGalley />
-      </Link>
       <Link to='/nontemplate'>
         <Nontemplate />
       </Link>
@@ -63,6 +67,8 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='galleylisting' element={<GalleyListing />} />
+          <Route path='sinkinggalley' element={<SinkingGalley />} />
           <Route path='gumdrop' element={<Gumdrop />} />
           <Route path='parkplatz' element={<Parkplatz />} />
           <Route path='test' element={<LabelTest />} />
@@ -72,7 +78,6 @@ function App() {
           <Route path='momcircles' element={<MomCircles />} />
           <Route path='mivova' element={<Mivova />} />
           <Route path='nontemplate' element={<Nontemplate />} />
-          <Route path='sinkinggalley' element={<SinkingGalley />} />
           <Route path='comingon' element={<CBR012WholeEarth />} />
 
           {/* Using path='*'' means 'match anything', so this route
