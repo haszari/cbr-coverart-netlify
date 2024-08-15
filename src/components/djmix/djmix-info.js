@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 
 import YAML from "yaml";
 
+import NumberedPlaylist from "./NumberedPlaylist.js";
+
 const useShowYaml = (url) => {
   const [showInfo, setShowInfo] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -53,6 +55,8 @@ export default function ShowInfo() {
 
   return (
     <div>
+      <NumberedPlaylist songs={showInfo?.tracks} />
+
       <img src={showInfo?.tracks[0]?.spotify?.coverArtUrl} />
       <p>Show info for {showInfo.date} </p>
     </div>
