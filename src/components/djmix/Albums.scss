@@ -1,0 +1,83 @@
+.Albums-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 90px);
+  grid-gap: 1em;
+  line-height: 0;
+  margin: 1em;
+  // transform: rotate( 2deg );
+  position: relative;
+
+  .release {
+    position: relative;
+
+    // .single (defaults)
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .info {
+      // Double width to fit more text!
+      width: 200px;
+      height: 100px;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 100px;
+      background: lightgray;
+      padding: 1em;
+
+      .artist {
+        font-weight: bold;
+      }
+      .title {
+        font-style: italic;
+      }
+      .releaseDate {
+        font-weight: lighter;
+      }
+    }
+
+    &.album {
+      grid-column: span 3;
+      grid-row: span 3;
+
+      img,
+      .info {
+        width: calc(300px + 2em);
+        height: calc(300px + 2em);
+      }
+      .info {
+        left: calc(300px + 2em);
+      }
+    }
+
+    &.ep {
+      grid-column: span 2;
+      grid-row: span 2;
+
+      img,
+      .info {
+        width: calc(180px + 1em);
+        height: calc(180px + 1em);
+      }
+      .info {
+        left: calc(180px + 1em);
+      }
+    }
+  }
+}
+
+.CoverGrid-group {
+  position: relative;
+  margin: 1em;
+  margin-bottom: 5em;
+  width: 850px;
+  height: 850px;
+  // border: 1px solid grey;
+  // background-color: black;
+}
+.mixer-logo {
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
+}
