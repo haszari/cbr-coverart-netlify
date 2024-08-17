@@ -1,7 +1,6 @@
 
 .CoverGrid-wrappper {
   position: relative;
-  margin: 1em;
   margin-bottom: 5em;
   width: 1000px;
   height: 1000px;
@@ -10,7 +9,6 @@
 .CoverGrid-container {
   display: grid;
   line-height: 0;
-  margin: 1em;
   position: relative;
 
   // Default 4x4 16 cover grid.

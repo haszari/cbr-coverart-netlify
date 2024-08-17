@@ -57,8 +57,16 @@ export default function ShowInfo() {
   const tracks = showInfo?.tracks;
   // const tracks = showInfo?.tracks.slice(0, 12);
 
+  const styles = {};
+  if (showInfo?.colours.foreground) {
+    styles.color = showInfo?.colours.foreground;
+  }
+  if (showInfo?.colours.background) {
+    styles.background = showInfo?.colours.background;
+  }
+
   return (
-    <div>
+    <div style={styles}>
       <CoverGrid tracks={tracks} />
       <NumberedPlaylist tracks={tracks} />
 
