@@ -29,7 +29,7 @@ const outputFile = ymlfile || 'test';
     height: 1000
   };
   await page.screenshot({ path: `renders/${outputFile}.png`, clip });
-  clip.y = 1000;
+  clip.y = 2000;
   await page.screenshot({ path: `renders/${outputFile}-tracklist.png`, clip });
   await browser.close();
 })();
