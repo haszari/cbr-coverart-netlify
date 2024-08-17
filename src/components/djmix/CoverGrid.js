@@ -8,14 +8,24 @@ import "./CoverGrid.scss";
 // seedrandom('hello.', { global: true, entropy: true });
 var prng = seedrandom();
 
-function CoverGridItem({ imageUrl }) {
+function CoverGridItem({
+  artists,
+  title,
+  version,
+  imageUrl
+}) {
+  let summary = `${ artists } - ${ title }`;
+  if (version) {
+    summary += ` (${ version })`;
+  }
   let classes = "release";
   if (!imageUrl) {
     classes += " gap";
   }
   return (
     <div className={ classes }>
-      { imageUrl ? ( <img src={ imageUrl } alt="" /> ) : null }
+      <div className="summary">{ summary }</div>
+      { imageUrl ? ( <img src={ imageUrl } alt={ summary} /> ) : null }
     </div>
   );
 }
@@ -69,12 +79,22 @@ export default function CoverGrid({ tracks }) {
   }
 
   const cells = tracks.map((tune, index) => {
-    const imageUrl = tune?.spotify?.coverArtUrl;
+    const artists = tune?.display?.artists;
+    const title = tune?.display?.title;
+    const version = tune?.display?.version;
+
+    let imageUrl = tune?.display?.coverArtUrl;
+    if ( !imageUrl ) {
+      imageUrl = tune?.spotify?.coverArtUrl;
+    }
 
     return (
       <CoverGridItem
         key={index}
         id={index}
+        artists={artists}
+        title={title}
+        version={version}
         imageUrl={imageUrl}
       />
     )
