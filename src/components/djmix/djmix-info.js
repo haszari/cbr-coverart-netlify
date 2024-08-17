@@ -7,6 +7,8 @@ import YAML from "yaml";
 import NumberedPlaylist from "./NumberedPlaylist.js";
 import CoverGrid from "./CoverGrid.js";
 
+import "./djmix-info.scss";
+
 const useShowYaml = (url) => {
   const [showInfo, setShowInfo] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -63,6 +65,9 @@ export default function ShowInfo() {
   }
   if (showInfo?.colours.background) {
     styles.background = showInfo?.colours.background;
+  }
+  if (showInfo?.fontSize) {
+    styles.fontSize = showInfo?.fontSize;
   }
 
   return (

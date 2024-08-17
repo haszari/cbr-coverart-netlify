@@ -21,9 +21,11 @@ function SongList({ tracks }) {
   });
 
   return (
-    <ol className="SongList">
-      {rows}
-    </ol>
+    <div className="SongList-wrapper">
+      <ol className="SongList">
+        {rows}
+      </ol>
+    </div>
   );
 }
 
