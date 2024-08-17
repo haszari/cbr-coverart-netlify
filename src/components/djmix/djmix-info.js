@@ -55,6 +55,7 @@ export default function ShowInfo() {
   }
 
   const tracks = showInfo?.tracks;
+  // const tracks = showInfo?.tracks.slice(0, 12);
 
   return (
     <div>
