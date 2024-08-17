@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "render-beatsreality": "node ./src/scripts/render-beatsreality.mjs",
     "render": "node ./src/scripts/render.mjs"
   },
   "eslintConfig": {
