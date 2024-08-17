@@ -9,8 +9,8 @@ function SongRow({ artist, title }) {
   );
 }
 
-function SongList({ songs }) {
-  const rows = songs.map((song, index) => {
+function SongList({ tracks }) {
+  const rows = tracks.map((song, index) => {
     return (
       <SongRow
         key={index}

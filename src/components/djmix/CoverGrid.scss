@@ -1,5 +1,34 @@
-// .CoverGrid-group,
-.SongList {
-  margin-top: 30em;
-  margin-bottom: 30em;
+
+.CoverGrid-wrappper {
+  position: relative;
+  margin: 1em;
+  margin-bottom: 5em;
+  width: 1000px;
+  height: 1000px;
+}
+
+.CoverGrid-container {
+  display: grid;
+  line-height: 0;
+  margin: 1em;
+  position: relative;
+
+  // Default 4x4 16 cover grid.
+  // This is overridden in CoverGrid component, depending on track list.
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+
+  .release {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.mixer-logo {
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
 }

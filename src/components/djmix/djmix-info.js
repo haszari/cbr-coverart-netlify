@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import YAML from "yaml";
 
 import NumberedPlaylist from "./NumberedPlaylist.js";
+import CoverGrid from "./CoverGrid.js";
 
 const useShowYaml = (url) => {
   const [showInfo, setShowInfo] = useState(null);
@@ -53,11 +54,13 @@ export default function ShowInfo() {
     return <div>Error: {error.message}</div>;
   }
 
+  const tracks = showInfo?.tracks;
+
   return (
     <div>
-      <NumberedPlaylist songs={showInfo?.tracks} />
+      <CoverGrid tracks={tracks} />
+      <NumberedPlaylist tracks={tracks} />
 
-      <img src={showInfo?.tracks[0]?.spotify?.coverArtUrl} />
       <p>Show info for {showInfo.date} </p>
     </div>
   );
