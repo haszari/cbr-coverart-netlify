@@ -13,8 +13,10 @@
   // Default 4x4 16 cover grid.
   // This is overridden in CoverGrid component, depending on track list.
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
+
+  // TODO: figure out how to customise grid gap.
+  // grid-column-gap: 1em;
+  // grid-row-gap: 1em;
 
   .release {
     .summary {

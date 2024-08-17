@@ -5,7 +5,6 @@ import seedrandom from 'seedrandom';
 // import CBRMixerLogo from "./CBRMixerLogo";
 import "./CoverGrid.scss";
 
-// seedrandom('hello.', { global: true, entropy: true });
 var prng = seedrandom();
 
 function CoverGridItem({
@@ -100,9 +99,11 @@ export default function CoverGrid({ tracks }) {
     )
   });
 
+  const styles = {};
+  styles.transform = `rotate(${ 5 - Math.round(prng() * 10) }deg)`;
 
   return (
-    <div className='CoverGrid-wrappper'>
+    <div className='CoverGrid-wrappper' style={styles}>
       <div className='CoverGrid-container' style={ gridStyles }>
       { cells }
       </div>
