@@ -12,6 +12,7 @@ import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
 import RedlineTrain from './components/covers/cbr010-redline-train';
 import Parkplatz from './components/covers/cbrxxx-parkplatz';
 import Gumdrop from './components/covers/cbrxxx-gumdrop';
+import DJMixInfo from './components/djmix/djmix-info';
 
 import LabelTest from './components/LabelTest';
 
@@ -79,6 +80,8 @@ function App() {
           <Route path='mivova' element={<Mivova />} />
           <Route path='nontemplate' element={<Nontemplate />} />
           <Route path='comingon' element={<CBR012WholeEarth />} />
+
+          <Route path='dj/:ymlfile' element={<DJMixInfo />} />
 
           {/* Using path='*'' means 'match anything', so this route
                 acts like a catch-all for URLs that we don't have explicit

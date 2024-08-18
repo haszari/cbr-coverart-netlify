@@ -1,0 +1,36 @@
+
+.CoverGrid-wrappper {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+}
+
+.CoverGrid-container {
+  display: grid;
+  line-height: 0;
+  position: relative;
+
+  // Default 4x4 16 cover grid.
+  // This is overridden in CoverGrid component, depending on track list.
+  grid-template-columns: repeat(4, 1fr);
+
+  // TODO: figure out how to customise grid gap.
+  // grid-column-gap: 1em;
+  // grid-row-gap: 1em;
+
+  .release {
+    .summary {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.mixer-logo {
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
+}
