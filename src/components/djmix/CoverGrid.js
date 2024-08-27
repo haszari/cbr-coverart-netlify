@@ -45,17 +45,20 @@ export default function CoverGrid({ tracks }) {
 
   const numGaps = square*square - tracks.length;
 
+  // Take a copy of the tracks array so we can insert gaps without mutating caller's params.
+  const tracksCopy = tracks.slice();
+
   // Now we need to disperse the gaps in an aesthetically pleasing way.
   // If 1, add to end (no need to do anything).
   // If == 2, add to start and end.
   // If > 2, add one at start and end and distribute others best we can.
   if ( numGaps === 2) {
-    tracks.unshift(null);
-    tracks.push(null);
+    tracksCopy.unshift(null);
+    tracksCopy.push(null);
   }
   else if ( numGaps > 2 ) {
-    tracks.unshift(null);
-    tracks.push(null);
+    tracksCopy.unshift(null);
+    tracksCopy.push(null);
 
     const gaps = numGaps - 2;
     const availableRows = square - 2;
@@ -71,13 +74,13 @@ export default function CoverGrid({ tracks }) {
       const gapRate = tracks.length / gaps;
       let start = square*square - square;
       for (let i = 0; i < gaps; i++) {
-        tracks.splice( Math.floor(start + prng()), 0, null );
+        tracksCopy.splice( Math.floor(start + prng()), 0, null );
         start -= gapRate;
       }
     }
   }
 
-  const cells = tracks.map((tune, index) => {
+  const cells = tracksCopy.map((tune, index) => {
     const artists = tune?.display?.artists;
     const title = tune?.display?.title;
     const version = tune?.display?.version;
