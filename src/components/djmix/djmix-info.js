@@ -60,11 +60,11 @@ export default function ShowInfo() {
   // const tracks = showInfo?.tracks.slice(0, 12);
 
   const styles = {};
-  if (showInfo?.colours.foreground) {
-    styles.color = showInfo?.colours.foreground;
+  if (showInfo?.colours?.foreground) {
+    styles.color = showInfo?.colours?.foreground;
   }
-  if (showInfo?.colours.background) {
-    styles.background = showInfo?.colours.background;
+  if (showInfo?.colours?.background) {
+    styles.background = showInfo?.colours?.background;
   }
   if (showInfo?.fontSize) {
     styles.fontSize = showInfo?.fontSize;

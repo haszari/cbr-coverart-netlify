@@ -1,0 +1,262 @@
+date: Thu Aug 15 2024
+genres:
+  - House, Disco, Chunky, Jackin, Warmup, Peak
+  - Tech House, Disco, Techno, Later
+  - Disco, Tech House, Minimal, Deep, Leftfield, Warmup, Peak, Later
+  - House, Breakbeat, Disco, Chunky, Warmup
+  - Tech House, Minimal, Later, Warmup
+  - House, Deep, Tech House, UK Garage, Warmup, Peak, Later
+  - Tech House, Techno, House, Deep, Minimal, Warmup, Peak, Later
+  - Acid, House, Electro House, Minimal, Deep, Warmup
+  - Tech House, Jazz, House, Deep, Minimal, Warmup, Later
+  - Techno, Deep, Progressive, Tech House, Driving, Warmup, Peak, Later
+  - Tech House, Techno, Minimal, Later
+  - Deep House, Warmup
+  - NZ, Deep House, Warmup
+  - Deep House, Warmup, Dub House
+  - Deep House, Acid House, Warmup
+tracks:
+  - title: Yes
+    artists:
+      - Shinichi Atobe
+    duration: 7:55
+    playlistKey: 03 Yes.m4a
+    genres: Tech House, Jazz, House, Deep, Minimal, Warmup, Later
+    tempo_raw: "119.996239"
+    tempo: 120
+    display:
+      artists: Shinichi Atobe
+      title: Yes
+      version: null
+    isrc: UK8261900355
+    spotify:
+      url: https://open.spotify.com/track/2yNmtP6AH5ovZkPsQ4v4JB
+      release_date: 2020-07-17
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273937541a91f47ca259b007ed9
+  - title: On a Threat
+    artists:
+      - Mario Bianco
+    duration: 6:21
+    playlistKey: 02 On a Threat.m4a
+    genres: Deep House, Warmup
+    tempo_raw: "121.999779"
+    tempo: 122
+    display:
+      artists: Mario Bianco
+      title: On a Threat
+      version: null
+    isrc: DEY472274346
+    spotify:
+      url: https://open.spotify.com/track/5CUuu7afY1Nsuhpv9JJQEg
+      release_date: 2022-06-17
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b27383b822b8d12cf929a91df786
+  - title: Say Watt
+    artists:
+      - Inland Knights
+    duration: 8:10
+    playlistKey: 01 Say Watt.m4a
+    genres: House, Breakbeat, Disco, Chunky, Warmup
+    tempo_raw: "122.999908"
+    tempo: 123
+    display:
+      artists: Inland Knights
+      title: Say Watt
+      version: null
+    isrc: GBJVT1200027
+    spotify:
+      url: https://open.spotify.com/track/26khqJoxjMtJYL5FSKOAQW
+      release_date: 2017-08-18
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273b2bebf5d136adeaa04956619
+  - title: Sisley's Groove (Hypnotic Pulse mix)
+    artists:
+      - Mono/Loco
+    duration: 7:40
+    playlistKey: Sisley's Groove (Hypnotic Pulse mix).mp3
+    genres: Deep House, Acid House, Warmup
+    tempo_raw: "122.999992"
+    tempo: 123
+    display:
+      artists: Mono/Loco
+      title: Sisley's Groove Hypnotic Pulse mix
+      version: null
+    isrc: NZFO01200095
+    spotify:
+      url: https://open.spotify.com/track/3myWnsbrJbFpeNRhpgYsBj
+      release_date: 2023-06-19
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273c6d26c203cd0a96380037867
+  - title: A Walk in the Forest
+    artists:
+      - eszsa
+    duration: 7:07
+    playlistKey: 05 A Walk in the Forest.mp3
+    genres: NZ, Deep House, Warmup
+    tempo_raw: "122.999924"
+    tempo: 123
+    display:
+      artists: eszsa
+      title: A Walk in the Forest
+      version: null
+    isrc: QZES92168709
+    spotify:
+      url: https://open.spotify.com/track/38DJd6joG8tHDUF6ccd3Aa
+      release_date: 2021-04-16
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b27396c19d613b5dc4921294f2bf
+  - title: East Coast Roller (Original Mix)
+    artists:
+      - nineteen79
+    duration: 6:41
+    playlistKey: 01 East Coast Roller (Original Mix).mp3
+    genres: Deep House, Warmup, Dub House
+    label: Black Sands
+    tempo_raw: "124.999863"
+    tempo: 125
+    display:
+      artists: nineteen79
+      title: East Coast Roller Original Mix
+      version: null
+    spotify: {}
+  - title: Emphasizer
+    artists:
+      - Steve Bug & Langenberg
+    duration: 7:22
+    playlistKey: 01 Emphasizer.m4a
+    genres: Techno, Deep, Progressive, Tech House, Driving, Warmup, Peak, Later
+    tempo_raw: "121.999840"
+    tempo: 122
+    display:
+      artists: Steve Bug & Langenberg
+      title: Emphasizer
+      version: null
+    isrc: DEL022020023
+    spotify:
+      url: https://open.spotify.com/track/0KSRGAJtzHq1LXBDilzMHF
+      release_date: 2020-04-24
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b27335ccd63ee44467e0588ef2ec
+  - title: Two Words
+    artists:
+      - Saytek
+    duration: 8:30
+    playlistKey: 09 Two Words.m4a
+    genres: Tech House, Disco, Techno, Later
+    tempo_raw: "121.999977"
+    tempo: 122
+    display:
+      artists: Saytek
+      title: Two Words
+      version: null
+    spotify: {}
+  - title: Senor Chunk
+    artists:
+      - Seb Zito
+    duration: 6:15
+    playlistKey: 01 Senor Chunk.m4a
+    genres: Tech House, Minimal, Later, Warmup
+    tempo_raw: "123.999924"
+    tempo: 124
+    display:
+      artists: Seb Zito
+      title: Senor Chunk
+      version: null
+    isrc: GBT9R1100053
+    spotify:
+      url: https://open.spotify.com/track/5Y0zChdh0sZlbmbQ64Diuc
+      release_date: 2011-10-10
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b2733b09b6623d148a8a48cb1157
+  - title: Get Low (feat. Likasto) [Black Loops Remix]
+    artists:
+      - James Curd
+    duration: 6:34
+    playlistKey: 02 Get Low (feat. Likasto) [Black Loops Remix].m4a
+    genres: House, Disco, Chunky, Jackin, Warmup, Peak
+    tempo_raw: "124.000610"
+    tempo: 124
+    display:
+      artists: James Curd
+      title: Get Low ft. Likasto Black Loops Remix
+      version: null
+    spotify: {}
+  - title: No Frills Dub
+    artists:
+      - Josh Butler
+    duration: 5:58
+    playlistKey: 01 No Frills Dub.mp3
+    genres: House, Deep, Tech House, UK Garage, Warmup, Peak, Later
+    tempo_raw: "124.001175"
+    tempo: 124
+    display:
+      artists: Josh Butler
+      title: No Frills Dub
+      version: null
+    isrc: GBBXG1400008
+    spotify:
+      url: https://open.spotify.com/track/4SMmVCoIRstSXhAl0fB9JG
+      release_date: 2014-03-16
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273f10538b1520443fa1162c72f
+  - title: Want My Love
+    artists:
+      - Mineo
+    duration: 4:44
+    playlistKey: 01 Want My Love.mp3
+    genres: Disco, Tech House, Minimal, Deep, Leftfield, Warmup, Peak, Later
+    tempo_raw: "124.999992"
+    tempo: 125
+    display:
+      artists: Mineo
+      title: Want My Love
+      version: null
+    isrc: US39N2202163
+    spotify:
+      url: https://open.spotify.com/track/1Jg65EDU6dZXiqjRb1OXlE
+      release_date: 2022-11-11
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b2730c37b3bb0100f6bfbddafe7e
+  - title: Setup (Ghostea remix)
+    artists:
+      - Lux Groove
+    duration: 6:18
+    playlistKey: 04 Setup (Ghostea remix).m4a
+    genres: Acid, House, Electro House, Minimal, Deep, Warmup
+    tempo_raw: "125.000137"
+    tempo: 125
+    display:
+      artists: Lux Groove
+      title: Setup Ghostea remix
+      version: null
+    isrc: QM4651800029
+    spotify:
+      url: https://open.spotify.com/track/3q412q9hUTlotI1CcwZSdU
+      release_date: 2018-04-13
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273f8da2986590947943406666b
+  - title: Is That My Wig
+    artists:
+      - Asadinho
+    duration: 6:40
+    playlistKey: 01 Is That My Wig.m4a
+    genres: Tech House, Techno, House, Deep, Minimal, Warmup, Peak, Later
+    tempo_raw: "125.999023"
+    tempo: 126
+    display:
+      artists: Asadinho
+      title: Is That My Wig
+      version: null
+    isrc: GBLV61600517
+    spotify:
+      url: https://open.spotify.com/track/2eGlg2EbZZIu779GwQyYt8
+      release_date: 2016-10-07
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b273c8e03f6ab7d8c2c6983262ce
+  - title: Yoko
+    artists:
+      - Julian Jeweil
+    duration: 7:17
+    playlistKey: 27 Yoko.mp3
+    genres: Tech House, Techno, Minimal, Later
+    tempo_raw: "124.999992"
+    tempo: 125
+    display:
+      artists: Julian Jeweil
+      title: Yoko
+      version: null
+    isrc: CAM261350417
+    spotify:
+      url: https://open.spotify.com/track/7K8maKMM9A5GRAyClpYcIl
+      release_date: 2013-06-10
+      coverArtUrl: https://i.scdn.co/image/ab67616d0000b27316f894b2ae12ecbd3b051855
