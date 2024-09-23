@@ -5,7 +5,7 @@ import 'styles/whole-earth.scss';
 
 import image from 'images/SinkingGalleySneer.jpeg';
 
-export default function Cover() {
+export default function Cover({ title = 'Sinking Galley' }) {
   const overlay = {
     position: 'absolute',
     left: 0,
@@ -48,7 +48,7 @@ export default function Cover() {
       <div style={blackCorners}/>
       <ArtistTitleLabel
         artist='Haszari + Kathia Rudametkin'
-        title='Sinking Galley'
+        title={title}
         padding='40px 50px'
         textSize='86px'
         titleTextSize='70%'

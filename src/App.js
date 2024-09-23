@@ -70,6 +70,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path='galleylisting' element={<GalleyListing />} />
           <Route path='sinkinggalley' element={<SinkingGalley />} />
+          <Route path='sinkinggalleyfoison' element={<SinkingGalley
+            title='Sinking Galley (Foison remix)'
+          />} />
           <Route path='gumdrop' element={<Gumdrop />} />
           <Route path='parkplatz' element={<Parkplatz />} />
           <Route path='test' element={<LabelTest />} />
