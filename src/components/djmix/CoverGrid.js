@@ -106,7 +106,7 @@ export default function CoverGrid({ tracks }) {
   styles.transform = `rotate(${ 5 - Math.round(prng() * 10) }deg)`;
 
   return (
-    <div className='CoverGrid-wrappper' style={styles}>
+    <div className='CoverGrid-wrapper' style={styles}>
       <div className='CoverGrid-container' style={ gridStyles }>
       { cells }
       </div>
