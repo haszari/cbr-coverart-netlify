@@ -14,6 +14,8 @@ import RedlineTrain from './components/covers/cbr010-redline-train';
 import Parkplatz from './components/covers/cbrxxx-parkplatz';
 import Gumdrop from './components/covers/cbrxxx-gumdrop';
 import Manas from './components/covers/cbrxxx-manas';
+import PopupCorridor from './components/covers/cbrxxx-popupcorridor';
+
 import DJMixInfo from './components/djmix/djmix-info';
 
 import LabelTest from './components/LabelTest';
@@ -23,6 +25,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/popupcorridor'>
+        <PopupCorridor />
+      </Link>
       <Link to='/manas'>
         <Manas />
       </Link>
@@ -76,6 +81,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='popupcorridor' element={<PopupCorridor />} />
           <Route path='manas' element={<Manas />} />
           <Route path='photicmiddlemarch' element={<PhoticMiddlemarch />} />
           <Route path='galleylisting' element={<GalleyListing />} />
