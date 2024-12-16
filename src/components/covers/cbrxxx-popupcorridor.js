@@ -17,7 +17,7 @@ export default function Cover() {
         padding='40px 60px'
         textSize='92px'
         titleTextSize='80%'
-        length={ 40 }
+        length={ 44 }
         forceRadius={ true }
         textAlign='right'
         position={{

@@ -15,6 +15,7 @@ import Parkplatz from './components/covers/cbrxxx-parkplatz';
 import Gumdrop from './components/covers/cbrxxx-gumdrop';
 import Manas from './components/covers/cbrxxx-manas';
 import PopupCorridor from './components/covers/cbrxxx-popupcorridor';
+import KipKapsalon from './components/covers/cbrxxx-kipkapsalon';
 
 import DJMixInfo from './components/djmix/djmix-info';
 
@@ -25,6 +26,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/kipkapsalon'>
+        <KipKapsalon />
+      </Link>
       <Link to='/popupcorridor'>
         <PopupCorridor />
       </Link>
@@ -81,6 +85,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='kipkapsalon' element={<KipKapsalon />} />
           <Route path='popupcorridor' element={<PopupCorridor />} />
           <Route path='manas' element={<Manas />} />
           <Route path='photicmiddlemarch' element={<PhoticMiddlemarch />} />
