@@ -17,14 +17,23 @@ export default function ArtistTitleLabel({
   length = 50,
   textAlign = '',
   colours,
+  borderWidth = '0',
   forceRadius = false
 }) {
   const leftAlign = position.left !== undefined;
-  const centered = (length === 100);
+  let anchored = 'centre';
+  if (position.left === 0) {
+     anchored = 'left';
+  }
+  else if (position.right === 0) {
+    anchored = 'right';
+  }
+  const centered = anchored === 'centre';
 
   colours = {
     text: 'black',
     background: 'white',
+    border: 'transparent',
     mixer: {
       top: '#555',
       middle: '#999',
@@ -34,26 +43,23 @@ export default function ArtistTitleLabel({
   };
 
   const borderRadius = [0, 0, 0, 0];
-  if (forceRadius) {
-    borderRadius[1] = radius;
-    borderRadius[2] = radius;
-    borderRadius[0] = radius;
-    borderRadius[3] = radius;
+  borderRadius[1] = radius;
+  borderRadius[2] = radius;
+  borderRadius[0] = radius;
+  borderRadius[3] = radius;
+
+  if (anchored === 'left') {
+    borderRadius[0] = 0;
+    borderRadius[3] = 0;
   }
-  else if (! centered) {
-    if (leftAlign) {
-      borderRadius[1] = radius;
-      borderRadius[2] = radius;
-    }
-    else {
-      borderRadius[0] = radius;
-      borderRadius[3] = radius;
-    }
+  else if (anchored === 'right') {
+    borderRadius[1] = 0;
+    borderRadius[2] = 0;
   }
 
   const wrap = {
     display: 'flex',
-    flexDirection: leftAlign ? 'row' : 'row-reverse',
+    // flexDirection: leftAlign ? 'row' : 'row-reverse',
     alignItems: 'center',
     gap: gap,
     padding: padding,
@@ -63,8 +69,23 @@ export default function ArtistTitleLabel({
     backgroundColor: colours.background,
     color: colours.text,
     borderRadius: borderRadius.join` `,
+    borderStyle: 'solid',
+    borderColor: colours.border,
+    borderWidth: borderWidth,
   };
-  const defaultTextAlign = centered ? 'center' : ( leftAlign ? 'right' : 'left' );
+
+  let defaultTextAlign = 'center';
+  if (anchored === 'left') {
+    wrap.borderLeftStyle = 'none';
+    wrap.flexDirection = 'row';
+    defaultTextAlign = 'right';
+  }
+  else if (anchored === 'right') {
+    wrap.borderRightStyle = 'none';
+    wrap.flexDirection = 'row-reverse';
+    defaultTextAlign = 'left';
+  }
+
   const copy = {
     textAlign: textAlign || defaultTextAlign,
     fontSize: textSize,

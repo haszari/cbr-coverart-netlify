@@ -6,12 +6,14 @@ import Nontemplate from './components/covers/cbrxxx-nontemplate';
 import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
 import GalleyListing from './components/covers/cbrxxx-galleylisting';
 import Mivova from './components/covers/cbrxxx-mivova';
-import PhoticReflex from './components/covers/cbrxxx-photicreflex';
+import PhoticReflex from './components/covers/cbr018-photicreflex';
+import PhoticMiddlemarch from './components/covers/cbr018b-photicmiddlemarch';
 import MomCircles from './components/covers/cbrxxx-momcircles';
 import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
 import RedlineTrain from './components/covers/cbr010-redline-train';
 import Parkplatz from './components/covers/cbrxxx-parkplatz';
 import Gumdrop from './components/covers/cbrxxx-gumdrop';
+import Manas from './components/covers/cbrxxx-manas';
 import DJMixInfo from './components/djmix/djmix-info';
 
 import LabelTest from './components/LabelTest';
@@ -21,6 +23,12 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/manas'>
+        <Manas />
+      </Link>
+      <Link to='/photicmiddlemarch'>
+        <PhoticMiddlemarch />
+      </Link>
       <Link to='/galleylisting'>
         <GalleyListing />
       </Link>
@@ -68,6 +76,8 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='manas' element={<Manas />} />
+          <Route path='photicmiddlemarch' element={<PhoticMiddlemarch />} />
           <Route path='galleylisting' element={<GalleyListing />} />
           <Route path='sinkinggalley' element={<SinkingGalley />} />
           <Route path='sinkinggalleyfoison' element={<SinkingGalley
