@@ -16,6 +16,8 @@ import Gumdrop from './components/covers/cbrxxx-gumdrop';
 import Manas from './components/covers/cbrxxx-manas';
 import PopupCorridor from './components/covers/cbrxxx-popupcorridor';
 import KipKapsalon from './components/covers/cbrxxx-kipkapsalon';
+import BadReception from './components/covers/cbrxxx-badreception';
+import FlyingSauces from './components/covers/cbrxxx-flyingsauces';
 
 import DJMixInfo from './components/djmix/djmix-info';
 
@@ -26,6 +28,12 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/flyingsauces'>
+        <FlyingSauces />
+      </Link>
+      <Link to='/badreception'>
+        <BadReception />
+      </Link>
       <Link to='/kipkapsalon'>
         <KipKapsalon />
       </Link>
@@ -85,6 +93,8 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='flyingsauces' element={<FlyingSauces />} />
+          <Route path='badreception' element={<BadReception />} />
           <Route path='kipkapsalon' element={<KipKapsalon />} />
           <Route path='popupcorridor' element={<PopupCorridor />} />
           <Route path='manas' element={<Manas />} />
