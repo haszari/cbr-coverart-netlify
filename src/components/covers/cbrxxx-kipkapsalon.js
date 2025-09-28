@@ -4,31 +4,36 @@ import ArtistTitleLabel from 'components/ArtistTitleLabel';
 
 import 'styles/whole-earth.scss';
 
-import image from 'images/kipkapsalon.jpg';
+import image from 'images/civic neon.jpeg';
 
 export default function Cover() {
   return (
     <div className='cover'>
       <BackgroundImage
         image={ image }
-        left={ 0 }
-        scale={ 140 }
+        left={ -790 }
+        top={ -220 }
+        scale={ 120 }
       />
       <ArtistTitleLabel
         artist='Haszari'
         title='Kip Kapsalon'
-        length={ 44 }
-        textSize='200px'
+        length={ 36 }
+        textSize='100px'
         position={{
-          top: '20%',
-          right: '28%',
-          left: '28%',
+          top: '15%',
+          right: 0,
         }}
-        mixerSize={0}
+        mixerSize={190}
         borderWidth='10px'
         colours={{
-          background: 'transparent',//'#f8b212',
-          // border: 'black',
+          background: 'black',//'#f8b212',
+          text: '#faffff',
+          mixer: {
+            top: '#f101dc',
+            middle: '#0049d7',
+            bottom: '#df0202',
+          },
         }}
       />
     </div>
