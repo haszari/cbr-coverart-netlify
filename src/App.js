@@ -18,6 +18,7 @@ import PopupCorridor from './components/covers/cbrxxx-popupcorridor';
 import KipKapsalon from './components/covers/cbrxxx-kipkapsalon';
 import BadReception from './components/covers/cbrxxx-badreception';
 import FlyingSauces from './components/covers/cbrxxx-flyingsauces';
+import WetPaint from './components/covers/cbrxxx-wetpaint';
 
 import DJMixInfo from './components/djmix/djmix-info';
 
@@ -28,6 +29,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/wetpaint'>
+        <WetPaint />
+      </Link>
       <Link to='/flyingsauces'>
         <FlyingSauces />
       </Link>
