@@ -19,6 +19,7 @@ import KipKapsalon from './components/covers/cbrxxx-kipkapsalon';
 import BadReception from './components/covers/cbrxxx-badreception';
 import FlyingSauces from './components/covers/cbrxxx-flyingsauces';
 import WetPaint from './components/covers/cbrxxx-wetpaint';
+import AnikaOwls from './components/covers/cbrxxx-anika-d-owls-forest';
 
 import DJMixInfo from './components/djmix/djmix-info';
 
@@ -29,6 +30,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/owls'>
+        <AnikaOwls />
+      </Link>
       <Link to='/wetpaint'>
         <WetPaint />
       </Link>
@@ -97,6 +101,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='owls' element={<AnikaOwls />} />
           <Route path='flyingsauces' element={<FlyingSauces />} />
           <Route path='badreception' element={<BadReception />} />
           <Route path='kipkapsalon' element={<KipKapsalon />} />
