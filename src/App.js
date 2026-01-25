@@ -105,6 +105,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='wetpaint' element={<WetPaint />} />
           <Route path='howls' element={<HaszariOwls />} />
           <Route path='owls' element={<AnikaOwls />} />
           <Route path='flyingsauces' element={<FlyingSauces />} />
