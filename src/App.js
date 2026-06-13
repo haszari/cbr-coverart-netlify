@@ -21,6 +21,7 @@ import FlyingSauces from './components/covers/cbrxxx-flyingsauces';
 import WetPaint from './components/covers/cbrxxx-wetpaint';
 import AnikaOwls from './components/covers/cbrxxx-anika-d-owls-forest';
 import HaszariOwls from './components/covers/cbrxxx-anika-d-owls-forest-haszari';
+import EggsForTea from './components/covers/cbr007-eggsfortea';
 
 import DJMixInfo from './components/djmix/djmix-info';
 
@@ -31,6 +32,10 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+    
+      <Link to='/eggs'>
+        <EggsForTea />
+      </Link>
       <Link to='/howls'>
         <HaszariOwls />
       </Link>
@@ -105,6 +110,8 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
+          <Route path='eggs' element={<EggsForTea />} />
+
           <Route path='wetpaint' element={<WetPaint />} />
           <Route path='howls' element={<HaszariOwls />} />
           <Route path='owls' element={<AnikaOwls />} />
