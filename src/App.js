@@ -11,6 +11,7 @@ import PhoticMiddlemarch from './components/covers/cbr018b-photicmiddlemarch';
 import MomCircles from './components/covers/cbrxxx-momcircles';
 import FoundationSlab from './components/covers/cbr009-foundation-slab-whole';
 import RedlineTrain from './components/covers/cbr010-redline-train';
+import LikeSo from './components/covers/cbr010-likeso';
 import Parkplatz from './components/covers/cbrxxx-parkplatz';
 import Gumdrop from './components/covers/cbrxxx-gumdrop';
 import Manas from './components/covers/cbrxxx-manas';
@@ -32,7 +33,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
-    
+      <Link to='/likeso'>
+        <LikeSo />
+      </Link>
       <Link to='/eggs'>
         <EggsForTea />
       </Link>
@@ -130,6 +133,7 @@ function App() {
           <Route path='parkplatz' element={<Parkplatz />} />
           <Route path='test' element={<LabelTest />} />
           <Route path='redlinetrain' element={<RedlineTrain />} />
+          <Route path='likeso' element={<LikeSo />} />
           <Route path='foundationslab' element={<FoundationSlab />} />
           <Route path='photicreflex' element={<PhoticReflex />} />
           <Route path='momcircles' element={<MomCircles />} />
