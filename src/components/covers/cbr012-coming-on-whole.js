@@ -11,16 +11,37 @@ export default function Cover() {
     <div className='cover'>
       <BackgroundImage
         image={ image }
-        scale={ 100 }
-        left='-450px'
-        // top={ 0 }
+        scale={ 103 }
+        left='-492px'
+        top='-90px'
       />
-      <ArtistTitleLabel
+      {/* <ArtistTitleLabel
         artist='Haszari'
         title='It Was Coming On'
         position={{
           right: 0,
           bottom: '5%',
+        }}
+      /> */}
+      <ArtistTitleLabel
+        artist='Haszari'
+        title='It Was Coming On'
+        length={ 100 }
+        padding='10em'
+        mixerSize='20em'
+        colours={{
+          background: 'transparent',
+          text: '#000479',
+          mixer: {
+            top: '#a5ebfb',
+            middle: '#7cccb9', 
+            bottom: '#93005f'
+          }
+        }}
+        position={{
+          right: 0,
+          bottom: 0,
+          width: '100%'
         }}
       />
     </div>
