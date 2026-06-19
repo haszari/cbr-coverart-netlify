@@ -2,6 +2,7 @@ import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 
 // import CBR012 from './components/covers/cbr012-coming-on';
 import CBR012WholeEarth from './components/covers/cbr012-coming-on-whole';
+import WhatDidYouSay from './components/covers/cbr023-whatdidyousay';
 import Nontemplate from './components/covers/cbrxxx-nontemplate';
 import SinkingGalley from './components/covers/cbrxxx-sinkinggalley';
 import GalleyListing from './components/covers/cbrxxx-galleylisting';
@@ -33,6 +34,9 @@ import 'styles/app.scss';
 function Home() {
   return (
     <>
+      <Link to='/whaddayasay'>
+        <WhatDidYouSay />
+      </Link>
       <Link to='/likeso'>
         <LikeSo />
       </Link>
@@ -112,9 +116,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/'>
-          <Route index element={<Home />} />
+          <Route index element={<Home />} />          
+          <Route path='whaddayasay' element={<WhatDidYouSay />} />          
           <Route path='eggs' element={<EggsForTea />} />
-
           <Route path='wetpaint' element={<WetPaint />} />
           <Route path='howls' element={<HaszariOwls />} />
           <Route path='owls' element={<AnikaOwls />} />
